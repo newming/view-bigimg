@@ -1,0 +1,17 @@
+{
+  "name": "view-bigimg",
+  "version": "1.0.0",
+  "description": "purejs image viewer",
+  "main": "lib/view-bigimg.js",
+  "scripts": {
+  },
+  "keywords": [
+    "imageviewer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newming/view-bigimg.git"
+  },
+  "author": "newming",
+  "license": "MIT"
+}

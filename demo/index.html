@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>image viewer</title>
+  <link rel="stylesheet" href="../lib/view-bigimg.css">
+</head>
+<body>
+
+  <div id='wrap'>
+    <img src="images/1.jpg" alt="image">
+    <img src="images/2.jpg" alt="image">
+  </div>
+
+  <script src="../lib/view-bigimg.js"></script>
+  <script>
+    var viewer = new ViewBigimg()
+
+    var wrap = document.getElementById('wrap')
+    // console.log(viewer)
+    wrap.onclick = function (e) {
+      if (e.target.nodeName === 'IMG') {
+        viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
+      }
+    }
+  </script>
+</body>
+</html>
