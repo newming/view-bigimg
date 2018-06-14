@@ -1,6 +1,6 @@
 {
   "name": "view-bigimg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "purejs image viewer",
   "main": "lib/view-bigimg.js",
   "scripts": {

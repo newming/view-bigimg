@@ -34,13 +34,14 @@
 .iv-close:after,
 .iv-close:before {
   content: "";
-  height: 4px;
+  height: 2px;
   width: 26px;
   background: #FFF;
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -2px;
+  border-radius: 2px;
 }
 
 .iv-close:before {
