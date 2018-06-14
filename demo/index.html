@@ -12,6 +12,7 @@
   <div id='wrap'>
     <img src="images/1.jpg" alt="image">
     <img src="images/2.jpg" alt="image">
+    <img src="images/3.jpg" alt="image">
   </div>
 
   <script src="../lib/view-bigimg.js"></script>
@@ -22,7 +23,8 @@
     // console.log(viewer)
     wrap.onclick = function (e) {
       if (e.target.nodeName === 'IMG') {
-        viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
+        // viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
+        viewer.show(e.target.src)
       }
     }
   </script>
