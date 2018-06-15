@@ -1,9 +1,10 @@
 {
   "name": "view-bigimg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "purejs image viewer",
   "main": "lib/view-bigimg.js",
   "scripts": {
+    "build": "rollup -c"
   },
   "keywords": [
     "imageviewer"
@@ -13,5 +14,12 @@
     "url": "https://github.com/newming/view-bigimg.git"
   },
   "author": "newming",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  }
 }
