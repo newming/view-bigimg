@@ -1,4 +1,5 @@
 import TouchEvent from './event'
+import isPassive from './isPassive'
 
 const ZOOM_CONSTANT = 15 // increase or decrease value for zoom on mouse wheel
 const MOUSE_WHEEL_COUNT = 5 //A mouse delta after which it should stop preventing default behaviour of mouse wheel
@@ -15,18 +16,6 @@ function easeOutQuart(t, b, c, d) {
   t /= d
   t--
   return -c * (t * t * t * t - 1) + b
-}
-// isPassive
-function isPassive () {
-  var supportsPassiveOption = false
-  try {
-    addEventListener('test', null, Object.defineProperty({}, 'passive', {
-      get: function () {
-        supportsPassiveOption = true
-      }
-    }))
-  } catch (e) {}
-  return supportsPassiveOption
 }
 
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/

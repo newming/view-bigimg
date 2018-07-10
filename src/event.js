@@ -1,3 +1,5 @@
+import isPassive from './isPassive'
+
 function TouchEvent(container, options) {
   this.container = container
   // an enpty function
